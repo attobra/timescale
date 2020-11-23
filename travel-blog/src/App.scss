@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+$site-width: 1200px;
+$hero-width: 1600px;
+$profile-image-width: 300px;
+
+$gutter: 8px;
+$gray: #333;
+$primary: #1977f3;
+$primary-light: #eef5fe;
+
+$small-breakpoint: 500px;
+$medium-breakpoint: 960px;
+
+.app {
+  * {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+  }
+}
+
+.navbar {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.nav-link:hover {
+  background-color: #1977f3;
+  color: #eef5fe;
+  border-radius: 5%;
+}
+
+.subtitle {
+  font-size: 0.5rem;
+}
+.image-hero {
+  width: 100%;
+}
+
+.image-circle {
+  border-radius: 50%;
+  width: 300px;
+  margin: 30px;
+}
+
+.profile-section {
+  margin-top: 50px;
+  display: flex;
+}
+
+.footer-section {
+  margin-bottom: 0;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #eef5fe;
+  font-size: 0.7rem;
+}
+
+.footer-link {
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 960px) {
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
